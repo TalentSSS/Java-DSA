@@ -6,7 +6,7 @@ public interface Queue {
 
     boolean isEmpty();
 
-    void enqueue(Object obj) throws QueueFullException;
+    void enqueue(Object obj);
 
     Object dequeue() throws QueueEmptyException;
 
