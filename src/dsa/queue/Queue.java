@@ -1,5 +1,8 @@
 package dsa.queue;
 
+/**
+ * @author talent
+ */
 public interface Queue {
     /**
      * 返回队列中元素数目

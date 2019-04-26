@@ -3,7 +3,10 @@ package dsa.queue.array;
 import dsa.queue.Queue;
 import dsa.queue.QueueEmptyException;
 
-public class Queue_Array implements Queue {
+/**
+ * @author talent
+ */
+public class QueueArray implements Queue {
     /**
      * 最大容量
      */
@@ -32,7 +35,7 @@ public class Queue_Array implements Queue {
     /**
      * 构造方法（空队列）
      */
-    public Queue_Array() {
+    public QueueArray() {
         this(MAX_CAPACITY);
     }
 
@@ -40,7 +43,7 @@ public class Queue_Array implements Queue {
      * 按指定容量创建对象
      * @param cap 容量
      */
-    public Queue_Array(int cap) {
+    public QueueArray(int cap) {
         this.capacity = cap;
         Q = new Object[cap];
     }

@@ -1,8 +1,17 @@
 package dsa;
 
+/**
+ * @author talent
+ */
 public class Node implements Position {
-    private Object element; // 数据对象
-    private Node next;  // 指向后继节点
+    /**
+     * element 数据对象
+     */
+    private Object element;
+    /**
+     * next 指向后继节点
+     */
+    private Node next;
 
     /********************构造方法********************/
     public Node() {

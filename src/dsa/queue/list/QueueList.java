@@ -4,7 +4,10 @@ import dsa.Node;
 import dsa.queue.Queue;
 import dsa.queue.QueueEmptyException;
 
-public class Queue_List implements Queue {
+/**
+ * @author talent
+ */
+public class QueueList implements Queue {
 
     /**
      * head 队列头
@@ -19,7 +22,7 @@ public class Queue_List implements Queue {
      */
     protected int size;
 
-    public Queue_List() {
+    public QueueList() {
         head = tail = null;
         size = 0;
     }

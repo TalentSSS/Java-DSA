@@ -1,13 +1,16 @@
 package dsa.stack.list.occasion;
 
 import dsa.stack.Stack;
-import dsa.stack.list.Stack_List;
+import dsa.stack.list.StackList;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * @author talent
+ */
 public class HTML {
 
     public static class Tag {
@@ -41,7 +44,7 @@ public class HTML {
 
     public boolean isHTMLMatched(Tag[] tag) {
         int level = 0;
-        Stack S = new Stack_List();
+        Stack S = new StackList();
         for (int i = 0; (i < tag.length) && (tag[i] != null); i++) {
             if(tag[i].isOpening()) {
                 S.push(tag[i].getName());

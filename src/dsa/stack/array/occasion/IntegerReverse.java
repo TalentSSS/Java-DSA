@@ -1,14 +1,14 @@
 package dsa.stack.array.occasion;
 
 
-import dsa.stack.array.Stack_Array;
+import dsa.stack.array.StackArray;
 
 /**
  * @author talent
  */
 public class IntegerReverse {
     public static Integer[] reverse(Integer[] a) {
-        Stack_Array S = new Stack_Array(a.length);
+        StackArray S = new StackArray(a.length);
         Integer[] b = new Integer[a.length];
         for(Integer i : a) {
             S.push(i);
