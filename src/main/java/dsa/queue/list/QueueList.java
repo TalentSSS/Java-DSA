@@ -101,7 +101,8 @@ public class QueueList implements Queue {
     /**
      * 遍历队列（不属于ADT）
      */
-    public void traverse() {
+    @Override
+    public void Traversal() {
         Node p = head;
         while (p != null) {
             System.out.println(p.getElem() + " ");

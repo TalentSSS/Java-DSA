@@ -35,4 +35,9 @@ public interface Queue {
      */
     Object front();
 
+    /**
+     * 遍历队列
+     */
+    void Traversal();
+
 }
