@@ -109,8 +109,7 @@ public class Queue_Array implements Queue {
     /**
      * 遍历队列（不属于ADT）
      */
-    @Override
-    public void tranverse() {
+    public void traverse() {
         for (int i = f; i < r - 1; i++) {
             System.out.print(Q[i] + " ");
         }
