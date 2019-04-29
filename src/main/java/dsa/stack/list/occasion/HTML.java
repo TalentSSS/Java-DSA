@@ -14,6 +14,9 @@ import java.util.StringTokenizer;
 public class HTML {
 
     public static class Tag {
+        /**
+         * 标签名
+         */
         String name;
         boolean opening;
 
@@ -48,6 +51,7 @@ public class HTML {
         for (int i = 0; (i < tag.length) && (tag[i] != null); i++) {
             if(tag[i].isOpening()) {
                 S.push(tag[i].getName());
+                // 增加缩进级别
                 indent(level++);
                 System.out.println("\t┌" + tag[i].getName());
             } else {
@@ -57,14 +61,17 @@ public class HTML {
                 if (!S.pop().equals(tag[i].getName())) {
                     return false;
                 }
+                // 减去缩进级别
                 indent(--level);
                 System.out.println("\t└" + tag[i].getName());
             }// else
         }// for
         if (S.isEmpty()) {
+            // 若最后栈为空说明标签匹配
             return true;
         }
         else {
+            // 否则不匹配
             return false;
         }
     }// isHTMLMatched
@@ -80,6 +87,7 @@ public class HTML {
             StringTokenizer st = new StringTokenizer(line, "<> \t", true);
             while (st.hasMoreElements()) {
                 String token = (String) st.nextToken();
+                // 根据在html的不同位置做处理
                 if (token.equals("<")) {
                     inTag = true;
                 } else if (token.equals(">")) {
