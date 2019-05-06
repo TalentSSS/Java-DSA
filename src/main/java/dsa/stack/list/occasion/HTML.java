@@ -86,7 +86,7 @@ public class HTML {
         while ((line = r.readLine()) != null) {
             StringTokenizer st = new StringTokenizer(line, "<> \t", true);
             while (st.hasMoreElements()) {
-                String token = (String) st.nextToken();
+                String token = st.nextToken();
                 // 根据在html的不同位置做处理
                 if (token.equals("<")) {
                     inTag = true;
