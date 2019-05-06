@@ -17,11 +17,20 @@ public class DLNode implements Position {
      */
     private DLNode next;
 
+    /**
+     * 返回存在该位置的元素
+     * @return 该位置的元素
+     */
     @Override
     public Object getElem() {
         return element;
     }
 
+    /**
+     * 将给定元素存放于该位置，返回之前存放的元素
+     * @param e 给定的元素
+     * @return 之前存放的元素
+     */
     @Override
     public Object setElem(Object e) {
         Object oldElement = element;
