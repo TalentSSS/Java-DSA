@@ -2,7 +2,7 @@ package dsa.vector.impl;
 
 import dsa.vector.BoundaryViolationException;
 
-public class Vector_ExtArray extends Vector_Array {
+public class VectorExtArray extends VectorArray {
     /**
      * 数组的容量
      */
@@ -21,7 +21,7 @@ public class Vector_ExtArray extends Vector_Array {
     /**
      * 构造函数
      */
-    public Vector_ExtArray() {
+    public VectorExtArray() {
         super();
     }
 

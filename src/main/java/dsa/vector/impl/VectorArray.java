@@ -3,7 +3,7 @@ package dsa.vector.impl;
 import dsa.vector.BoundaryViolationException;
 import dsa.vector.Vector;
 
-public class Vector_Array implements Vector {
+public class VectorArray implements Vector {
 
     /**
      * 数组的容量
@@ -23,7 +23,7 @@ public class Vector_Array implements Vector {
     /**
      * 构造函数
      */
-    public Vector_Array() {
+    public VectorArray() {
         A = new Object[N];
         n = 0;
     }
